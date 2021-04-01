@@ -10,6 +10,18 @@ import EventBind from './components/EventBind';
 import ConditionalRendering from './components/ConditionalRendering';
 import MethodAsPropsParent from './components/MethodAsPropsParent';
 import ListRendering from './components/ListRendering/ListRendering';
+import StyleSheet from './components/StyleSheet';
+import FormHandling from './components/FormHandling/FormHandling';
+import MountingA from './components/LifeCycleMethod/MountingA';
+import UpdatingA from './components/LifeCycleMethod/UpdatingA';
+import Fragments from './components/AdvancedConcept/Fragements/Fragments';
+import Table from './components/AdvancedConcept/Fragements/Table';
+import PureComponentS from './components/AdvancedConcept/Components/PureComponentS';
+import ParentComponentS from './components/AdvancedConcept/Components/ParentComponentS';
+import Memo from './components/AdvancedConcept/Memo';
+import Refs from './components/AdvancedConcept/Refs/Refs';
+import FocusInput from './components/AdvancedConcept/Refs/FocusInput';
+import FordwardParentRefInput from './components/AdvancedConcept/Refs/FordwardParentRefInput';
 
 
 function App() {
@@ -43,7 +55,36 @@ function App() {
       {/* <MethodAsPropsParent></MethodAsPropsParent> */}
 
       {/* List rendering */}
-      <ListRendering></ListRendering>
+      {/* <ListRendering></ListRendering> */}
+
+      {/* Style css */}
+      {/* <StyleSheet></StyleSheet> */}
+
+      {/* Form Handling */}
+      {/* <FormHandling></FormHandling> */}
+
+      {/* Life Cycle Method */}
+      {/* <MountingA></MountingA> */}
+      {/* <UpdatingA></UpdatingA> */}
+
+      {/* Fragement in React */}
+      {/* <Fragments></Fragments> */}
+      {/* <Table></Table> */}
+
+      {/* Pure Components */}
+      {/* <PureComponentS></PureComponentS> */}
+      {/* <ParentComponentS></ParentComponentS> */}
+
+      {/* Memo Components */}
+      {/* <Memo></Memo>
+      <ParentComponentS></ParentComponentS> */}
+
+      {/* Refs */}
+      {/* <Refs></Refs> */}
+      {/* <FocusInput></FocusInput> */}
+      {/* <FordwardParentRefInput></FordwardParentRefInput> */}
+
+      
     </div>
   );
 }
