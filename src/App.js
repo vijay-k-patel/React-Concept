@@ -25,7 +25,14 @@ import FordwardParentRefInput from './components/AdvancedConcept/Refs/FordwardPa
 import PortalsComponent from './components/AdvancedConcept/PortalsComponent';
 import ErrorHero from './components/AdvancedConcept/ErrorHero';
 import ErrorBoundary from './components/AdvancedConcept/ErrorBoundary';
-
+//import ClickCounter from './components/AdvancedConcept/HigherOrderComponent/ClickCounter'
+import ClickCounter from './components/AdvancedConcept/RenderProps/ClickCounter'
+//import HoverCounter from './components/AdvancedConcept/HigherOrderComponent/HoverCounter'
+import HoverCounter from './components/AdvancedConcept/RenderProps/HoverCounter'
+import User from './components/AdvancedConcept/RenderProps/User'
+import Counter from './components/AdvancedConcept/RenderProps/Counter'
+import ComponentC from './components/AdvancedConcept/Context/ComponentC'
+import {UserProvider} from './components/AdvancedConcept/Context/UserContext'
 
 
 function App() {
@@ -100,7 +107,27 @@ function App() {
         <ErrorHero heroName="Superman"></ErrorHero>
         <ErrorHero heroName="jocker"></ErrorHero>
       </ErrorBoundary> */}
-      
+
+      {/* Higher Order Component */}
+      {/* <ClickCounter name="vijay"></ClickCounter>
+      <HoverCounter></HoverCounter> */}
+
+      {/* Render Props */}
+      {/* <ClickCounter></ClickCounter>
+      <HoverCounter></HoverCounter>
+      <User name = {(isLoggedIn) => isLoggedIn ? "vijay" : "guest"}></User>   */}
+      {/* <Counter renderProps = {(count,incrementCounter) => (
+        <ClickCounter count={count} incrementCounter={incrementCounter} />)}
+        /> 
+      <Counter renderProps = {(count,incrementCounter) => (
+        <HoverCounter count={count} incrementCounter={incrementCounter} />)}
+        />  */}
+
+      {/* Context */}
+      <UserProvider value="Vijay">
+      <ComponentC></ComponentC>
+      </UserProvider>
+      {/* <ComponentC></ComponentC> */}
     </div>
   );
 }
