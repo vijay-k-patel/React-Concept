@@ -22,6 +22,10 @@ import Memo from './components/AdvancedConcept/Memo';
 import Refs from './components/AdvancedConcept/Refs/Refs';
 import FocusInput from './components/AdvancedConcept/Refs/FocusInput';
 import FordwardParentRefInput from './components/AdvancedConcept/Refs/FordwardParentRefInput';
+import PortalsComponent from './components/AdvancedConcept/PortalsComponent';
+import ErrorHero from './components/AdvancedConcept/ErrorHero';
+import ErrorBoundary from './components/AdvancedConcept/ErrorBoundary';
+
 
 
 function App() {
@@ -84,6 +88,18 @@ function App() {
       {/* <FocusInput></FocusInput> */}
       {/* <FordwardParentRefInput></FordwardParentRefInput> */}
 
+      {/* Portals */}
+      {/* <PortalsComponent></PortalsComponent> */}
+
+      {/* Error Boundary */}
+      {/* <ErrorHero heroName="Batman"></ErrorHero>
+      <ErrorHero heroName="Superman"></ErrorHero>
+      <ErrorHero heroName="jocker"></ErrorHero> */}
+      {/* <ErrorBoundary>
+        <ErrorHero heroName="Batman"></ErrorHero>
+        <ErrorHero heroName="Superman"></ErrorHero>
+        <ErrorHero heroName="jocker"></ErrorHero>
+      </ErrorBoundary> */}
       
     </div>
   );
