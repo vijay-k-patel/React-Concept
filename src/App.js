@@ -19,7 +19,7 @@ import PureComponentS from './components/AdvancedConcept/Components/PureComponen
 import ParentComponentS from './components/AdvancedConcept/Components/ParentComponentS';
 import Memo from './components/AdvancedConcept/Memo';
 import Refs from './components/AdvancedConcept/Refs/Refs';
-import FocusInput from './components/AdvancedConcept/Refs/FocusInput';
+//import FocusInput from './components/AdvancedConcept/Refs/FocusInput';
 import FordwardParentRefInput from './components/AdvancedConcept/Refs/FordwardParentRefInput';
 import PortalsComponent from './components/AdvancedConcept/PortalsComponent';
 import ErrorHero from './components/AdvancedConcept/ErrorHero';
@@ -54,6 +54,11 @@ import FetchingData from './components/Hooks/useReducer/FetchingData';
 //import FetchingDataOne from './components/Hooks/useReducer/FetchingDataOne'
 //import ParentComponent from './components/Hooks/useCallback/ParentComponent'
 import CounterMemo from './components/Hooks/useMemo/CounterMemo'
+import FocusInput from './components/Hooks/useRef/FocusInput';
+import UseRef from './components/Hooks/useRef/UseRef';
+import DocTitleOne from './components/Hooks/customHooks/DocTitleOne'
+
+
 
 function App() {
   return (
@@ -192,6 +197,15 @@ function App() {
 
       {/* useMemo */}
       {/* <CounterMemo></CounterMemo> */}
+
+      {/* useRef */}
+      {/* <FocusInput></FocusInput> */}
+      {/* <UseRef></UseRef> */}
+
+      {/* Custom Hooks */}
+      <DocTitleOne></DocTitleOne>
+
+
 
     </div>
   );
