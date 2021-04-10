@@ -1,15 +1,15 @@
 
-import Greet from './components/Greet'
-import WelcomeClass from './components/WelcomeClass';
-import MessageState from './components/MessageState';
-import CounterState from './components/CounterState';
-import FunctionClick from './components/FunctionClick';
-import ClassClick from './components/ClassClick';
-import EventBind from './components/EventBind';
-import ConditionalRendering from './components/ConditionalRendering';
-import MethodAsPropsParent from './components/MethodAsPropsParent';
+import Greet from './components/Basic/Greet'
+import WelcomeClass from './components/Basic/WelcomeClass';
+import MessageState from './components/Basic/MessageState';
+import CounterState from './components/Basic/CounterState';
+import FunctionClick from './components/Basic/FunctionClick';
+import ClassClick from './components/Basic/ClassClick';
+import EventBind from './components/Basic/EventBind';
+import ConditionalRendering from './components/Basic/ConditionalRendering';
+import MethodAsPropsParent from './components/Basic/MethodAsPropsParent';
 import ListRendering from './components/ListRendering/ListRendering';
-import StyleSheet from './components/StyleSheet';
+import StyleSheet from './components/Basic/StyleSheet';
 import FormHandling from './components/FormHandling/FormHandling';
 import MountingA from './components/LifeCycleMethod/MountingA';
 import UpdatingA from './components/LifeCycleMethod/UpdatingA';
@@ -44,9 +44,16 @@ import ClassMouse from './components/Hooks/useEffect/ClassMouse';
 import RunEffectOnlyOnce from './components/Hooks/useEffect/RunEffectOnlyOnce';
 import UseEffectCleanup from './components/Hooks/useEffect/UseEffectCleanup';
 import UseEffectInterval from './components/Hooks/useEffect/UseEffectInterval';
-
-
-
+import DataFetching from './components/Hooks/useEffect/DataFetching';
+//import MainComponent from './components/Hooks/useContext/MainComponent';
+import Counter1 from './components/Hooks/useReducer/Counter1';
+import Counter2 from './components/Hooks/useReducer/Counter2';
+import Counter3 from './components/Hooks/useReducer/Counter3';
+import MainComponent from './components/Hooks/useReducerwithuseContext/MainComponent';
+import FetchingData from './components/Hooks/useReducer/FetchingData';
+//import FetchingDataOne from './components/Hooks/useReducer/FetchingDataOne'
+//import ParentComponent from './components/Hooks/useCallback/ParentComponent'
+import CounterMemo from './components/Hooks/useMemo/CounterMemo'
 
 function App() {
   return (
@@ -160,7 +167,31 @@ function App() {
       {/* <ClassMouse></ClassMouse> */}
       {/* <RunEffectOnlyOnce></RunEffectOnlyOnce> */}
       {/* <UseEffectCleanup></UseEffectCleanup> */}
-      <UseEffectInterval></UseEffectInterval>
+      {/* <UseEffectInterval></UseEffectInterval> */}
+      {/* <DataFetching></DataFetching> */}
+
+      {/* useContext */}
+      {/* <MainComponent></MainComponent> */}
+
+      {/* useReducer */}
+      {/* <Counter1></Counter1> */}
+      {/* <Counter2></Counter2> */}
+      {/* <Counter3></Counter3> */}
+
+      {/* useReducer with useContext */}
+      {/* <MainComponent></MainComponent> */}
+      
+      {/* useState and useEffect */}
+      {/* <FetchingData></FetchingData> */}
+
+      {/* useReducer and useEffect */}
+      {/* <FetchingDataOne></FetchingDataOne> */}
+
+      {/* useCallback */}
+      {/* <ParentComponent></ParentComponent> */}
+
+      {/* useMemo */}
+      {/* <CounterMemo></CounterMemo> */}
 
     </div>
   );
